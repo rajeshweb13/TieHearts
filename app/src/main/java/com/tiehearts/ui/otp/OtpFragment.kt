@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.findNavController
 import com.tiehearts.R
 import com.tiehearts.databinding.FragmentMobileBinding
 import com.tiehearts.databinding.FragmentOtpBinding
@@ -30,5 +32,16 @@ class OtpFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.apply {
+            backButton.setOnClickListener {
+                (requireActivity() as? AppCompatActivity)?.onBackPressedDispatcher?.onBackPressed()
+            }
+
+            submit.setOnClickListener {
+                findNavController().navigate(R.id.action_mobileFragment_to_otpFragment)
+            }
+
+        }
     }
 }
