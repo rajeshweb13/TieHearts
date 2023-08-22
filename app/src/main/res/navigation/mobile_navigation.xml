@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.tiehearts.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.tiehearts.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.tiehearts.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_splash"
+        android:name="com.tiehearts.ui.splash.SplashFragment"
+        android:label="Splash Fragment"
+        tools:layout="@layout/fragment_splash">
+
+
+        <action
+            android:id="@+id/action_spalashFragment_to_tutorialFragment"
+            app:destination="@+id/navigation_tutorial"/>
+
+        <action
+            android:id="@+id/action_spalashFragment_to_homeFragment"
+            app:destination="@+id/navigation_home"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_tutorial"
+        android:name="com.tiehearts.ui.tutorial.TutorialFragment"
+        android:label="Tutorial Fragment"
+        tools:layout="@layout/fragment_tutorial">
+
+        <action
+            android:id="@+id/action_tutorialFragment_to_mobileFragment"
+            app:destination="@+id/navigation_mobile"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_mobile"
+        android:name="com.tiehearts.ui.mobile.MobileFragment"
+        android:label="@string/mobile"
+        tools:layout="@layout/fragment_mobile">
+
+
+        <action
+            android:id="@+id/action_mobileFragment_to_otpFragment"
+            app:destination="@+id/navigation_otop"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_otop"
+        android:name="com.tiehearts.ui.otp.OtpFragment"
+        android:label="@string/otp"
+        tools:layout="@layout/fragment_otp" />
+
+</navigation>

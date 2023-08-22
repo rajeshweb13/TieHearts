@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">TieHearts</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mobile">Mobile</string>
+    <string name="please_enter_your_mobile_number">Please enter your \nmobile number</string>
+    <string name="we_need_to_check_whether_are_already_registered_with_us">We need to check whether are \nalready registered with us.</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="please_enter_otp_sent_to_your_mobile_number">Please enter OTP sent \nto your mobile number</string>
+    <string name="enter_the_6_digits_otp_we_have_nsent_to_91xxxxxxxxxx">enter the 6 digits OTP we have \nsent to +91XXXXXXXXXX</string>
+    <string name="otp">OTP</string>
+
+    <integer-array name="tut_images">
+        <item>@drawable/tut_01</item>
+        <item>@drawable/tut_02</item>
+        <item>@drawable/tut_03</item>
+        <item>@drawable/tut_04</item>
+        <item>@drawable/tut_05</item>
+    </integer-array>
+
+    <string-array name="tut_header">
+        <item>Lock Your Secret Feelings</item>
+        <item>Your Locked Feelings</item>
+        <item>It’s TieHearts</item>
+        <item>How Many Love/Like You</item>
+        <item>Just Say It!</item>
+    </string-array>
+
+    <string-array name="tut_desc">
+        <item>Select the contact number of your crush and lock your feelings with TieHearts.</item>
+        <item>Your locked feelings will remain secret until you reveal it by yourself.</item>
+        <item>It’s ‘TieHearts’ if you crush locks back feelings for you.</item>
+        <item>You can check, how many known people love/like you.</item>
+        <item>Why hide your feelings when you can lock your feelings with TieHearts</item>
+    </string-array>
+</resources>
